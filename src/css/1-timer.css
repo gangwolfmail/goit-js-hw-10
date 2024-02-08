@@ -12,6 +12,10 @@
   font-size: 16px;
 }
 
+ul {
+  list-style: none;
+}
+
 .clock-wrapper {
   display: flex;
   gap: 8px;
