@@ -27,7 +27,7 @@ const options = {
         message: 'You can start the countdown',
         messageColor: '#FAFAFB',
         messageSize: '16px',
-        position: 'topCenter',
+        position: 'topRight',
         close: false,
       });
     } else {
@@ -37,7 +37,7 @@ const options = {
         message: 'Please choose a date in the future',
         messageColor: '#FFBEBE',
         messageSize: '16px',
-        position: 'topCenter',
+        position: 'topRight',
         close: false,
       });
       disableBtn();
@@ -65,7 +65,7 @@ startBtn.addEventListener('click', event => {
         message: 'Date came, timer  has stopped',
         messageColor: '#FAFAFB',
         messageSize: '16px',
-        position: 'topCenter',
+        position: 'topRight',
         close: false,
       });
     }
@@ -73,13 +73,13 @@ startBtn.addEventListener('click', event => {
 });
 
 function disableBtn() {
-  startBtn.disable = true;
+  startBtn.disabled = true;
   startBtn.style.background = '#cfcfcf';
   startBtn.style.color = '#989898';
 }
 
 function activeBtn() {
-  startBtn.disable = false;
+  startBtn.disabled = false;
   startBtn.style.background = '#4e75ff';
   startBtn.style.color = '#fff';
 }

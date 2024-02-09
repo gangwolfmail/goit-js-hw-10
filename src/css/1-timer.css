@@ -16,6 +16,14 @@ ul {
   list-style: none;
 }
 
+li a {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .clock-wrapper {
   display: flex;
   gap: 8px;
@@ -89,6 +97,14 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.iziToast {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
 /* body {
   font-family: Arial, Helvetica, sans-serif;
 }
